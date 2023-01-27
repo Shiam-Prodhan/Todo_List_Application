@@ -1,1 +1,11 @@
-<p>Hello world</p>
+<p>
+  <mat-toolbar color="basic">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+    <mat-icon id="logo">note_add</mat-icon>
+    <span id="title">ToDo List</span>
+    <span class="example-spacer"></span>
+    <button mat-stroked-button id="addTask" (click)="openDialog()">Add Task</button>
+  </mat-toolbar>
+</p>

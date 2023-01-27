@@ -1,0 +1,14 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+#addTask {
+  color: rgb(255, 255, 255);
+  background-color: rgb(245, 91, 2);
+}
+#logo {
+  height: 20px;
+}
+#title {
+  font-size: 21px;
+  margin-top: 1.5px;
+}

@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>Add Task</h1>
+<div mat-dialog-content>
+  
+  <p id="button">
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="Write your title here" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+  </p>
+  <mat-form-field appearance="outline">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions [align]="'end'" style="margin: 10px;">
+<button mat-raised-button color="warn" mat-dialog-close> Close </button>
+<button mat-raised-button color="primary"> Save </button>
+</div>
