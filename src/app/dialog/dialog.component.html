@@ -2,27 +2,35 @@
 <div mat-dialog-content>
   <form [formGroup]="listForm">
     <p id="button">
-        <mat-form-field appearance="outline">
-          <mat-label>Title</mat-label>
-          <input formControlName="title" matInput placeholder="Write your title here" />
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-            <mat-label>Description</mat-label>
-            <textarea formControlName="description" matInput></textarea>
-          </mat-form-field>
-      </p>
       <mat-form-field appearance="outline">
-        <mat-label>Choose a date</mat-label>
-        <input formControlName="date" matInput [matDatepicker]="picker">
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
+        <mat-label>Title</mat-label>
+        <input
+          formControlName="title"
+          matInput
+          placeholder="Write your title here"
+        />
       </mat-form-field>
-
+      <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <textarea formControlName="description" matInput></textarea>
+      </mat-form-field>
+    </p>
+    <mat-form-field appearance="outline">
+      <mat-label>Choose a date</mat-label>
+      <input formControlName="date" matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
   </form>
 </div>
 
-<div mat-dialog-actions [align]="'end'" style="margin: 10px;">
-<button mat-raised-button color="warn" mat-dialog-close> Close </button>
-<button mat-raised-button color="primary" (click)="addTask()"> Save </button>
+<div mat-dialog-actions [align]="'end'" style="margin: 10px">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="primary" (click)="addTask()">
+    {{ actionButton }}
+  </button>
 </div>
