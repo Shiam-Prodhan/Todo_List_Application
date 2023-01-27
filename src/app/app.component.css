@@ -5,9 +5,11 @@
 #addTask {
   color: rgb(255, 255, 255);
   background-color: rgb(245, 91, 2);
+  margin-right: 50px;
 }
 #logo {
   height: 20px;
+  margin-left: 50px;
 }
 #title {
   font-size: 21px;
@@ -25,4 +27,10 @@ table {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+body{
+  background-image: url("src/bg.png");
+  background-size: cover;
+
 }

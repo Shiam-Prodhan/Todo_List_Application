@@ -1,18 +1,5 @@
 {
-  "taskList": [
-    {
-      "title": "Test",
-      "description": "it works",
-      "date": "2023-01-30T18:00:00.000Z",
-      "id": 1
-    },
-    {
-      "title": "Test 2",
-      "description": "Hurray",
-      "date": "2023-01-29T18:00:00.000Z",
-      "id": 2
-    }
-  ],
+  "taskList": [],
   "comments": [
     {
       "id": 1,
