@@ -1,0 +1,26 @@
+{
+  "taskList": [
+    {
+      "title": "Test",
+      "description": "It works.",
+      "date": "2023-01-26T18:00:00.000Z",
+      "id": 1
+    },
+    {
+      "title": "Test 2",
+      "description": "Yahooooo",
+      "date": "2023-01-27T18:00:00.000Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
