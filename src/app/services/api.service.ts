@@ -19,4 +19,11 @@ export class ApiService {
   deleteTask(id: number) {
     return this.http.delete<any>('http://localhost:3000/taskList/' + id);
   }
+
+  getTask2() {
+    return this.http.get<any>('http://localhost:3000/taskList2/');
+  }
+  postTask2(data: any) {
+    return this.http.put<any>('http://localhost:3000/taskList2/', data);
+  }
 }

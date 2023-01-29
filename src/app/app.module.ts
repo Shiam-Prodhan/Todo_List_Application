@@ -20,9 +20,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import {MatListModule} from '@angular/material/list';
+import { Dialog2Component } from './dialog2/dialog2.component';
+import { Dialog3Component } from './dialog3/dialog3.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
-  declarations: [AppComponent, DialogComponent],
+  declarations: [AppComponent, DialogComponent, Dialog2Component, Dialog3Component],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -40,7 +44,9 @@ import {MatSortModule} from '@angular/material/sort';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

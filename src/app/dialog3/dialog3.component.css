@@ -1,0 +1,18 @@
+#img{
+    background-image: url("src/profile.png");
+    height: 100px;
+    width: 140px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: 8px
+    
+    ;
+}
+#intro{
+    width: 170px;
+}
+#close{
+    margin-right: 20px;
+    padding: 20px;
+}

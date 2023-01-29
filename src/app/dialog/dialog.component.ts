@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ApiService } from '../services/api.service';
+import { Api2Service } from '../services/api2.service';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
@@ -11,9 +12,11 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class DialogComponent {
   listForm!: FormGroup;
   actionButton: string = 'Save';
+
   constructor(
     private formBuilder: FormBuilder,
     private api: ApiService,
+    private api2: Api2Service,
     @Inject(MAT_DIALOG_DATA) public editTask: any,
     private dialogRef: MatDialogRef<DialogComponent>
   ) {}
