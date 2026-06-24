@@ -39,7 +39,7 @@ Users can remove tasks that are no longer needed.
 1. Clone the repository:
 
 ```bash
-git clone [https://github.com/your-username/TodoListApplication.git](https://github.com/Shiam-Prodhan/Todo_List_Application)
+git clone https://github.com/Shiam-Prodhan/Todo_List_Application
 ```
 
 2. Navigate to the project directory:
